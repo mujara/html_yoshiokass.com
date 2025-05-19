@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="●サイトの検索キーワード●" />
+<meta name="description" content="●サイトの検索説明●" />
+<title>●サイトのタイトル●</title>
+<meta property="og:url" content="●ページの URL●" />
+<meta property="og:type" content="●ページの種類●website article" />
+<meta property="og:title" content="●ページの タイトル●" />
+<meta property="og:description" content="●ページの説明文●" />
+<meta property="og:site_name" content="●サイト名●" />
+<meta property="og:image" content="●サムネイル画像のURL●" />
+<meta name="apple-mobile-web-app-title" content="●iOS表示名●" />
+<meta name="author" content="●作者名●" />
+<link rel="apple-touch-icon" href="iphone.png">
+<link rel="stylesheet" href="css/import.css" media="all" />
+
+<script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?gUwfYWZ-iOk%3D&box=V~O0yFRmYdg%3D&aa=1&ab=2"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="home" class="home">
+
+<div id="wrapper">
+	<header id="header" class="clearfix">
+			
+		<div id="pageTopFix">
+			<div class="inBase">
+				<div class="header__siteTitleBox">
+					<h1 class="header__siteTitle"><a href="<?php echo home_url(); ?>"><img src="img/common/siteTitle.svg" alt="奈良市の車検、車の修理・整備なら吉岡商事株式会社　/国土交通省指定民間車検工場" /></a></h1>
+				<!-- /.header__siteTitleBox --></div>
+
+				<div class="header__contentBox">
+					<div class="header__informationBox">
+						<p class="header__information"><span>7:30-19:00</span><span>年中無休</span><span>※元旦～3日のみ休業</span><span><i class="fa fa-fw fa-flip-horizontal icon-phone "></i>0742-33-7687</span></p>
+						<ul class="header__contactButton">
+							<li><a href="<?php echo home_url(); ?>/contact">LINEでお問い合わせ</a></li>
+							<li><a href="https://page.line.me/183ugfqm?openQrModal=true">業者様お問い合わせ</a></li>
+						</ul>
+					<!-- /.header__informationBox --></div>
+					<nav class="globalNavi">
+							<ul class="globalNavi__menu__main">
+								<li><a href="<?php echo home_url(); ?>/about">私たちについて</a></li>
+								<li><span>サービス</span>
+									<ul class="globalNavi__menu__sub">
+										<li><a href="<?php echo home_url(); ?>/inspection">車検</a></li>
+										<li><a href="<?php echo home_url(); ?>/maintenance">修理・整備</a></li>
+										<li><a href="<?php echo home_url(); ?>/sheet-metal">板金修理</a></li>
+										<li><a href="<?php echo home_url(); ?>/wash-coating">洗車・コーティング・エアコン修理</a></li>
+										<li><a href="<?php echo home_url(); ?>/sales">車販売・買取</a></li>
+										<li><a href="<?php echo home_url(); ?>/insurance">自動車保険</a></li>
+										<li><a href="<?php echo home_url(); ?>/oil">潤滑油卸売</a></li>
+									</ul> 
+				            			</li>
+								<li><a href="<?php echo home_url(); ?>/works">事例紹介</a></li>
+								<li><a href="<?php echo home_url(); ?>/voice">お客様の声</a></li>
+								<li><a href="<?php echo home_url(); ?>/question">よくあるご質問</a></li>
+								<li><a href="<?php echo home_url(); ?>/message">代表挨拶・スタッフ紹介</a></li>
+								<li><a href="<?php echo home_url(); ?>/recruit">採用情報</a></li>
+								<li><a href="<?php echo home_url(); ?>/company"> 会社概要</a></li>
+							</ul>
+					<!-- /.globalNavi --></nav>
+				<!-- /.header__contentBox --></div>
+			<!-- /.inBase --></div>
+		<!-- /#pageTopFix --></div>
+		
+			<nav class="globalNaviSmall">
+				<div id="globalNaviSmallIcon" class="globalNaviSmall__icon globalNaviSmall__icon--type01">
+					<div class="globalNaviSmall__iconButton">
+						<small>MENU</small>
+						<span class="iconButton--top"></span>
+						<span class="iconButton--middle"></span>
+						<span class="iconButton--bottom"></span>
+					</div>
+				</div>
+
+				<div class="modal micromodal-slide" id="modal-globalNaviSmall" aria-hidden="true">
+					<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				    		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-globalNaviSmall-labelledby">
+
+							<div class="globalNaviSmall__menu" id="modal-globalNaviSmall-labelledby">
+								<div class="globalNaviSmall__menu__inner">
+									<div class="globalNaviSmall__siteTitle"><img src="img/common/siteTitle.svg" alt="奈良市の車検、車の修理・整備なら吉岡商事株式会社　/国土交通省指定民間車検工場" />
+									</div>
+									<div class="globalNaviSmall__tel"><a href="tel:0742337687"><i class="fa fa-fw fa-flip-horizontal icon-phone "></i>0742-33-7687</a></div>
+										
+									<p class="globalNaviSmall__information">
+										7:30-19:00　年中無休　<small>※元旦～3日のみ休業</small>
+									<!-- /.pageBottomBox__title --></p>
+
+
+									<ul class="globalNaviSmall__menu__main">
+										<li><a href="<?php echo home_url(); ?>/about">私たちについて</a></li>
+									</ul>
+									<ul class="globalNaviSmall__menu__main">
+										<li><span>サービス</span>
+											<ul class="globalNaviSmall__menu__sub">
+												<li><a href="<?php echo home_url(); ?>/inspection">車検</a></li>
+												<li><a href="<?php echo home_url(); ?>/maintenance">修理・整備</a></li>
+												<li><a href="<?php echo home_url(); ?>/sheet-metal">板金修理</a></li>
+												<li><a href="<?php echo home_url(); ?>/wash-coating"><small>洗車・コーティング・エアコン修理</small></a></li>
+												<li><a href="<?php echo home_url(); ?>/sales">車販売・買取</a></li>
+												<li><a href="<?php echo home_url(); ?>/insurance">自動車保険</a></li>
+												<li><a href="<?php echo home_url(); ?>/oil">潤滑油卸売</a></li>
+											</ul> 
+						            			</li>
+									</ul>
+									<ul class="globalNaviSmall__menu__main">
+										<li><a href="<?php echo home_url(); ?>/works">事例紹介</a></li>
+										<li><a href="<?php echo home_url(); ?>/voice">お客様の声</a></li>
+										<li><a href="<?php echo home_url(); ?>/question">よくあるご質問</a></li>
+										<li><a href="<?php echo home_url(); ?>/message">代表挨拶・スタッフ紹介</a></li>
+										<li><a href="<?php echo home_url(); ?>/recruit">採用情報</a></li>
+										<li><a href="<?php echo home_url(); ?>/company"> 会社概要</a></li>
+									</ul>
+								<!-- /.globalNaviSmall__menu__inner --></div>
+							<!-- /.globalNaviSmall__menu --></div>
+
+				    		<!-- /.modal__container --></div>
+					<!-- /.modal__overlay --></div>
+				<!-- /#modal-globalNaviSmall --></div>
+
+		    <!-- /.globalNaviSmall --></nav>
+	<!-- /#header --></header>
+    
+	<section class="mainVisual">
+		<div class="inBase">
+			<div class="mainVisual__image is--PC">
+				<div class="mainVisual__videoBox">
+					<video src="img/home/mainVisual.mp4" loop playsinline autoplay muted></video>
+				<!-- /.mainVisual__videoBox --></div>
+			<!-- /.mainVisual__image --></div>
+			<div class="mainVisual__image is--SP">
+				<div class="mainVisual__videoBox">
+					<video class="mainVisual__video" src="img/home/mainVisual_sp.mp4" loop playsinline autoplay muted></video>
+				<!-- /.mainVisual__videoBox --></div>
+			<!-- /.mainVisual__image --></div>
+    			<h2 class="mainVisual__copy"><span>こころの通ったサービスと</span><br><span>信頼のメンテナンス。</span></h2>
+		<!-- /.inBase --></div>
+	<!-- /.mainVisual --></section>
+
+	<div class="inBase"><div class="inBase__inner clearfix">
+		<div class="homeToMovieButton">
+			<a href="#"><i class="fa fa-fw icon-play-circle"></i> 動画で見る吉岡商事</a>
+		<!-- /.homeToMovieButton --></div>
+	<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+
+	<div class="homeNewsBox">
+		<div class="inBase"><div class="inBase__inner clearfix">
+			<h3 class="homeNewsBox__title">NEWS</h3>
+			<p class="homeNewsBox__content"><a href="#"><span>2024.01.01</span><span>テキストテキストテキストテキストテキストテキストテキストテキスト</span></a></p>
+			<div class="homeNewsBox__button"><a href="<?php echo home_url(); ?>/news">一覧をみる</a></div>
+		<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+	<!-- /.homeNewsBox --></div>
+	
+	<div id="contents" class="clearfix">
+		<figure class="contentSideImage01"><img src="img/home/bgImage01.png" alt="奈良市での車検や車の修理・整備" /></figure>
+		<figure class="contentSideImage02"><img src="img/home/bgImage02.png" alt="国土交通省指定民間車検工場　吉岡商事株式会社" /></figure>
+		<div class="inBase"><div class="inBase__inner clearfix">
+			<div class="homeServiceBox">
+				<div class="sectionTitle--type01">
+					<h3>
+						<span>Service</span>
+						<small>サービス</small>
+					</h3>
+				<!-- /.sectionTitle --></div>
+				<p class="text-type01">私たちは、〇〇〇〇〇〇の理念のもと、お客様に安心してカーライフを楽しんでいただけるよう、サービスを提供しています。<br>
+					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ</p>
+				
+				<div class="homeServiceBox__button--type01"><a href="<?php echo home_url(); ?>/inspection">
+					<div class="homeServiceBox__button--type01__image">
+						<figure><img src="img/home/imgService01.jpg" alt="車検" /></figure>
+						<h4 class="homeServiceBox__button--type01__title">
+							車検
+						<!-- /.homeServiceBox__button--type01__title --></h4>
+					<!-- /.homeServiceBox__button--type01__image --></div>
+					<div class="homeServiceBox__button--type01__inner">
+						<h5>安い、早い、便利！<br>国が認めた指定工場での安心車検</h5>
+						<p>国家資格を持つ整備士による、ディーラー品質の車検を安価に。<br>土日の対応や半日車検も可能です</p>
+					<!-- /.homeServiceBox__button--type01__inner --></div>
+				</a><!-- /.homeServiceBox__button--type01 --></div>
+				<p class="homeServiceBox__button__sentence__sp">国家資格を持つ整備士による、ディーラー品質の車検を安価に。<br>土日の対応や半日車検も可能です</p>
+				
+				<div class="homeServiceBox__button--type01 --typeSecond"><a href="<?php echo home_url(); ?>/maintenance">
+					<div class="homeServiceBox__button--type01__image">
+						<figure><img src="img/home/imgService02.jpg" alt="修理 整備" /></figure>
+						<h4 class="homeServiceBox__button--type01__title">
+							修理<br>　整備
+						<!-- /.homeServiceBox__button--type01__title --></h4>
+					<!-- /.homeServiceBox__button--type01__image --></div>
+					<div class="homeServiceBox__button--type01__inner">
+						<h5>高品質なメンテナンスが<br>ディーラー価格の25%から40%OFF</h5>
+						<p>オイル交換、タイヤ交換、エアコンのメンテナンスなど、<br>お車の一般修理や整備のことなら何でもご相談ください。</p>
+					<!-- /.homeServiceBox__button--type01__inner --></div>
+				</a><!-- /.homeServiceBox__button--type01 --></div>
+				<p class="homeServiceBox__button__sentence__sp">オイル交換、タイヤ交換、エアコンのメンテナンスなど、<br>お車の一般修理や整備のことなら何でもご相談ください。</p>
+
+				<div class="homeServiceBox__inner">
+					<div class="homeServiceBox__button--type02"><a href="<?php echo home_url(); ?>/sheet-metal">
+						<div class="homeServiceBox__button--type02__image">
+							<figure><img src="img/home/imgService03.jpg" alt="板金修理" /></figure>
+							<h4 class="homeServiceBox__button--type02__title">
+								板金修理
+							<!-- /.homeServiceBox__button--type02__title --></h4>
+						<!-- /.homeServiceBox__button--type02__image --></div>
+						<div class="homeServiceBox__button--type02__inner">
+							<h5>キズやヘコミをキレイに</h5>
+							<p>ほとんどのキズやヘコミをパネル交換なしで修理。外車、高級車はさらにお得です。</p>
+						<!-- /.homeServiceBox__button--type02__inner --></div>
+					</a><!-- /.homeServiceBox__button--type02 --></div>
+					<p class="homeServiceBox__button__sentence__sp">ほとんどのキズやヘコミをパネル交換なしで修理。外車、高級車はさらにお得です。</p>
+
+					<div class="homeServiceBox__button--type02"><a href="<?php echo home_url(); ?>/sales">
+						<div class="homeServiceBox__button--type02__image">
+							<figure><img src="img/home/imgService04.jpg" alt="販売・買取" /></figure>
+							<h4 class="homeServiceBox__button--type02__title">
+								販売・買取
+							<!-- /.homeServiceBox__button--type02__title --></h4>
+						<!-- /.homeServiceBox__button--type02__image --></div>
+						<div class="homeServiceBox__button--type02__inner">
+							<h5>ディーラーに負けない<br>お値引き</h5>
+							<p>お探しの車を納得価格でお求めいただけます！下取りでさらにお得に！</p>
+						<!-- /.homeServiceBox__button--type02__inner --></div>
+					</a><!-- /.homeServiceBox__button--type02 --></div>
+					<p class="homeServiceBox__button__sentence__sp">お探しの車を納得価格でお求めいただけます！下取りでさらにお得に！</p>
+
+					<div class="homeServiceBox__button--type02"><a href="<?php echo home_url(); ?>/wash-coating">
+						<div class="homeServiceBox__button--type02__image">
+							<figure><img src="img/home/imgService05.jpg" alt="クリーニング" /></figure>
+							<h4 class="homeServiceBox__button--type02__title">
+								クリーニング
+							<!-- /.homeServiceBox__button--type02__title --></h4>
+						<!-- /.homeServiceBox__button--type02__image --></div>
+						<div class="homeServiceBox__button--type02__inner">
+							<h5>頑固な汚れも<br>スッキリ！</h5>
+							<p>さまざまなメニューをご用意！お悩みにあったものをご提案します。</p>
+						<!-- /.homeServiceBox__button--type02__inner --></div>
+					</a><!-- /.homeServiceBox__button--type02 --></div>
+					<p class="homeServiceBox__button__sentence__sp">さまざまなメニューをご用意！お悩みにあったものをご提案します。</p>
+
+					<div class="homeServiceBox__button--type02"><a href="<?php echo home_url(); ?>/insurance">
+						<div class="homeServiceBox__button--type02__image">
+							<figure><img src="img/home/imgService06.jpg" alt="保険" /></figure>
+							<h4 class="homeServiceBox__button--type02__title">
+								保険
+							<!-- /.homeServiceBox__button--type02__title --></h4>
+						<!-- /.homeServiceBox__button--type02__image --></div>
+						<div class="homeServiceBox__button--type02__inner">
+							<h5>万が一に寄り添うアドバイス</h5>
+							<p>事故などの際はお客さまに代わり、当社が保険会社への連絡や調整を行います。</p>
+						<!-- /.homeServiceBox__button--type02__inner --></div>
+					</a><!-- /.homeServiceBox__button--type02 --></div>
+					<p class="homeServiceBox__button__sentence__sp">事故などの際はお客さまに代わり、当社が保険会社への連絡や調整を行います。</p>
+
+				<!-- /.homeServiceBox__inner --></div>
+			<!-- /.homeServiceBox --></div>
+
+			<div class="homeFeatureBox">
+				<figure class="homeFeatureBox__image"><img src="img/home/imgFeature.jpg" alt="わたしたちの強み" /></figure>
+
+				<div class="sectionTitle--type01">
+					<h3>
+						<span>Feature</span>
+						<small>わたしたちの強み</small>
+					</h3>
+				<!-- /.sectionTitle --></div>
+				
+				<div class="homeFeatureBox__featureListBox">
+					<div class="homeFeatureBox__featureList">
+						<figure class="homeFeatureBox__featureListIcon"><img src="img/home/iconFuture01.svg" alt="安心" /></figure>
+						<h4 class="homeFeatureBox__featureListTitle">安心</h4>
+						<p class="homeFeatureBox__featureListSntence">国土交通省指定の車検整備工場で<br class="hidden-sp">整備士が7名在籍しているから、<br class="hidden-sp">ディーラー品質！</p>
+					<!-- /.homeFeatureBox__featureList --></div>
+
+					<div class="homeFeatureBox__featureList">
+						<figure class="homeFeatureBox__featureListIcon"><img src="img/home/iconFuture02.svg" alt="安い" /></figure>
+						<h4 class="homeFeatureBox__featureListTitle">安い</h4>
+						<p class="homeFeatureBox__featureListSntence">高品質なのに驚きの価格！<br class="hidden-sp">6つの割引サービスで<br class="hidden-sp">さらにお得です。</p>
+					<!-- /.homeFeatureBox__featureList --></div>
+
+					<div class="homeFeatureBox__featureList">
+						<figure class="homeFeatureBox__featureListIcon"><img src="img/home/iconFuture03.svg" alt="便利" /></figure>
+						<h4 class="homeFeatureBox__featureListTitle">便利</h4>
+						<p class="homeFeatureBox__featureListSntence">代車無料！年中無休で対応します。<br class="hidden-sp">事前見積り済の場合、<br class="hidden-sp">最速半日でお引渡し可能です。</p>
+					<!-- /.homeFeatureBox__featureList --></div>
+
+					<div class="homeFeatureBox__featureList">
+						<figure class="homeFeatureBox__featureListIcon"><img src="img/home/iconFuture04.svg" alt="充実" /></figure>
+						<h4 class="homeFeatureBox__featureListTitle">充実</h4>
+						<p class="homeFeatureBox__featureListSntence">最新機器完備！<br class="hidden-sp">ハイブリッド車だけでなく<br class="hidden-sp">電気自動車も対応可能です。</p>
+					<!-- /.homeFeatureBox__featureList --></div>
+
+					<div class="homeFeatureBox__featureList">
+						<figure class="homeFeatureBox__featureListIcon"><img src="img/home/iconFuture05.svg" alt="お得" /></figure>
+						<h4 class="homeFeatureBox__featureListTitle">お得</h4>
+						<p class="homeFeatureBox__featureListSntence">アフターフォロー万全！<br class="hidden-sp">車検後も安心で<br class="hidden-sp">お得なセットも！</p>
+					<!-- /.homeFeatureBox__featureList --></div>
+				<!-- /.homeFeatureBox__featureListBox --></div>
+
+				<p class="text-type01">私たちは、〇〇〇〇〇〇の理念のもと、お客様に安心してカーライフを楽しんでいただけるよう、サービスを提供しています。<br>
+					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ</p>
+
+				<div class="homeFeatureBox__button tC">
+					<div class="button--type01">
+						<a href="<?php echo home_url(); ?>/about">私たちについて</a>
+					<!-- /.button--type01 --></div>
+				<!-- /.homeFeatureBox__button --></div>
+
+			<!-- /.homeFeatureBox --></div>
+
+
+			<div class="homeCaseBox">
+				<div class="sectionTitle--type01">
+					<h3>
+						<span>Case</span>
+						<small>事例紹介</small>
+					</h3>
+				<!-- /.sectionTitle --></div>
+
+				<div class="homeCaseBox__inner">
+
+
+
+
+				<!-- スライダーここから -->
+				<div class="sliderBox--typeChangeSlide">
+				<!-- Slider全体のコンテナ -->
+				<div class="swiper">
+				 <!-- Sliderの内包コンテナ -->
+				<div class="swiper-wrapper">
+					<!-- Slideさせたいコンテンツ -->
+					<div class="swiper-slide">
+
+						<div class="homeCaseBox__caseBox"><a href="#">
+							<figure class="homeCaseBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/home/imgCase01.jpg" alt="事例紹介" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+							<div class="homeCaseBox__content">
+								<div class="homeCaseBox__category">カテゴリー</div>
+								<p class="homeCaseBox__date">24.00.00</p>
+								<table class="homeCaseBox__information">
+									<tr>
+										<th>車種</th>
+										<td>ああああああああ</td>
+									</tr>
+									<tr>
+										<th>メニュー</th>
+										<td>ああああああああ</td>
+									</tr>
+									<tr>
+										<th>価格</th>
+										<td>ああああああああ</td>
+									</tr>
+								</table>
+							<!-- /.homeCaseBox__content --></div>
+						</a><!-- /.homeCaseBox__caseBox --></div>
+
+					<!-- /.swiper-slide --></div>
+					<div class="swiper-slide">
+
+						<div class="homeCaseBox__caseBox"><a href="#">
+							<figure class="homeCaseBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/home/imgCase02.jpg" alt="事例紹介" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+							<div class="homeCaseBox__content">
+								<div class="homeCaseBox__category">カテゴリー</div>
+								<p class="homeCaseBox__date">24.00.00</p>
+								<table class="homeCaseBox__information">
+									<tr>
+										<th>車種</th>
+										<td>ああああああああ</td>
+									</tr>
+									<tr>
+										<th>メニュー</th>
+										<td>ああああああああ</td>
+									</tr>
+									<tr>
+										<th>価格</th>
+										<td>ああああああああ</td>
+									</tr>
+								</table>
+							<!-- /.homeCaseBox__content --></div>
+						</a><!-- /.homeCaseBox__caseBox --></div>
+
+					<!-- /.swiper-slide --></div>
+					<div class="swiper-slide">
+
+						<div class="homeCaseBox__caseBox"><a href="#">
+							<figure class="homeCaseBox__image">
+								<div class="adjustBox">
+									<div class="adjustBox__inner">
+										<img src="img/home/imgCase03.jpg" alt="事例紹介" />
+									<!-- /.adjustBox__inner --></div>
+								<!-- /.adjustBox --></div>
+							</figure>
+							<div class="homeCaseBox__content">
+								<div class="homeCaseBox__category">カテゴリー</div>
+								<p class="homeCaseBox__date">24.00.00</p>
+								<table class="homeCaseBox__information">
+									<tr>
+										<th>車種</th>
+										<td>ああああああああ</td>
+									</tr>
+									<tr>
+										<th>メニュー</th>
+										<td>ああああああああ</td>
+									</tr>
+									<tr>
+										<th>価格</th>
+										<td>ああああああああ</td>
+									</tr>
+								</table>
+							<!-- /.homeCaseBox__content --></div>
+						</a><!-- /.homeCaseBox__caseBox --></div>
+
+					<!-- /.swiper-slide --></div>
+
+				<!-- /.swiper-wrapper --></div>
+				<!-- ナビゲーションボタン（※省略可） -->
+				<!--<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>-->
+
+				<!-- /.swiper --></div>
+				<!-- Sliderここまで -->
+				<!-- /.sliderBox--typeChangeSlide --></div>
+				<!-- スライダーここまで -->
+
+
+
+				<!-- /.homeCaseBox__inner --></div>
+
+				<div class="homeFeatureBox__button tC">
+					<div class="button--type01">
+						<a href="<?php echo home_url(); ?>/works">もっと見る</a>
+					<!-- /.button--type01 --></div>
+				<!-- /.homeFeatureBox__button --></div>
+
+			<!-- /.homeCaseBox --></div>
+
+			<div class="homePageBox">
+				<div class="homePageBox__inner"><a href="<?php echo home_url(); ?>/voice">
+					<figure><img src="img/home/imgMoreContent01.jpg" alt="お客様の声" /></figure>
+					<p><span>お客様の声</span></p>
+				</a><!-- /.homePageBox__inner --></div>
+
+				<div class="homePageBox__inner"><a href="<?php echo home_url(); ?>/question">
+					<figure><img src="img/home/imgMoreContent02.jpg" alt="よくあるご質問" /></figure>
+					<p><span>よくあるご質問</span></p>
+				</a><!-- /.homePageBox__inner --></div>
+
+				<div class="homePageBox__inner"><a href="<?php echo home_url(); ?>/blog">
+					<figure><img src="img/home/imgMoreContent03.jpg" alt="お役立ちコラム" /></figure>
+					<p><span>お役立ちコラム</span></p>
+				</a><!-- /.homePageBox__inner --></div>
+
+				<div class="homePageBox__inner"><a href="<?php echo home_url(); ?>/company">
+					<figure><img src="img/home/imgMoreContent04.jpg" alt="会社概要" /></figure>
+					<p><span>会社概要</span></p>
+				</a><!-- /.homePageBox__inner --></div>
+			<!-- /.homePageBox --></div>
+
+
+			<div class="homeMessageBox">
+				<figure class="homeMessageBox__image"><img src="img/home/imgMessage.jpg" alt="代表からの挨拶" /></figure>
+				<div class="homeMessageBox__inner">
+					<div class="sectionTitle--type01">
+						<h3>
+							<span>Message</span>
+							<small>代表挨拶</small>
+						</h3>
+					<!-- /.sectionTitle --></div>
+					
+					<div class="homeMessageBox__content">
+						<h4>テキストテキストテキスト<br>テキストテキストテキストテキストテキスト</h4>
+						<p class="sM">テキストテキストテキストテキストテキストテキスト<br>
+							テキストテキストテキスト<br>
+							テキストテキストテキストテキストテキストテキスト<br>
+							テキストテキストテキストテキストトテキスト<br>
+							テキストテキストテキストテキスト<br>
+							テキストテキストテ<br><br>
+
+							テキストテキストテキストテキストテキストテキスト<br>
+							テキストテキストテキスト<br>
+							テキストテキストテキストテキストテキストテキスト<br>
+							</p>
+						<p class="homeMessageBox__name"><small>代表取締役</small>　中川 正成</p>
+					<!-- /.homeMessageBox__content --></div>
+				<!-- /.homeMessageBox__inner --></div>
+			<!-- /.homeMessageBox --></div>
+
+
+			<div class="homeStaffBox">
+				<div class="sectionTitle--type01">
+					<h3>
+						<span>Staff</span>
+						<small>スタッフ</small>
+					</h3>
+				<!-- /.sectionTitle --></div>
+
+				<div class="homeStaffBox__content"><div class="homeStaffBox__inner">
+
+
+
+
+
+
+<!-- スライダーここから -->
+<div class="sliderBox--typeBasic">
+<div class="inBase">
+<!-- Slider全体のコンテナ -->
+<div class="swiper">
+    <!-- Sliderの内包コンテナ -->
+    <div class="swiper-wrapper">
+        <!-- Slideさせたいコンテンツ -->
+	<div class="swiper-slide">
+		<div class="homeStaffBox__staffBox">
+			<div class="homeStaffBox__image">
+				<figure><img src="img/home/imgStaff01.jpg" alt="スタッフ" /></figure>
+				<p>整備士　00年目</p>
+			<!-- /.homeStaffBox__image --></div>
+			<div class="homeStaffBox__sentence">
+				アットホームで楽しいお店です。お困り事があれば気軽に相談して下さい。
+			<!-- /.homeStaffBox__sentence --></div>
+		<!-- /.homeStaffBox__staffBox --></div>
+	<!-- /.swiper-slide --></div>
+
+	<div class="swiper-slide">
+		<div class="homeStaffBox__staffBox">
+			<div class="homeStaffBox__image">
+				<figure><img src="img/home/imgStaff02.jpg" alt="スタッフ" /></figure>
+				<p>2024年入社　アルバイト</p>
+			<!-- /.homeStaffBox__image --></div>
+			<div class="homeStaffBox__sentence">
+				ここにひとこと程度の文章が<br>テキストで入ります。
+			<!-- /.homeStaffBox__sentence --></div>
+		<!-- /.homeStaffBox__staffBox --></div>
+	<!-- /.swiper-slide --></div>
+
+	<div class="swiper-slide">
+		<div class="homeStaffBox__staffBox">
+			<div class="homeStaffBox__image">
+				<figure><img src="img/home/imgStaff03.jpg" alt="スタッフ" /></figure>
+				<p>整備士　00年目</p>
+			<!-- /.homeStaffBox__image --></div>
+			<div class="homeStaffBox__sentence">
+				ここにひとこと程度の文章が<br>テキストで入ります。
+			<!-- /.homeStaffBox__sentence --></div>
+		<!-- /.homeStaffBox__staffBox --></div>
+	<!-- /.swiper-slide --></div>
+
+	<div class="swiper-slide">
+		<div class="homeStaffBox__staffBox">
+			<div class="homeStaffBox__image">
+				<figure><img src="img/home/imgStaff04.jpg" alt="スタッフ" /></figure>
+				<p>整備士　00年目</p>
+			<!-- /.homeStaffBox__image --></div>
+			<div class="homeStaffBox__sentence">
+				ここにひとこと程度の文章が<br>テキストで入ります。
+			<!-- /.homeStaffBox__sentence --></div>
+		<!-- /.homeStaffBox__staffBox --></div>
+	<!-- /.swiper-slide --></div>
+
+	<div class="swiper-slide">
+		<div class="homeStaffBox__staffBox">
+			<div class="homeStaffBox__image">
+				<figure><img src="img/home/imgStaff05.jpg" alt="スタッフ" /></figure>
+				<p>整備士　00年目</p>
+			<!-- /.homeStaffBox__image --></div>
+			<div class="homeStaffBox__sentence">
+				ここにひとこと程度の文章が<br>テキストで入ります。
+			<!-- /.homeStaffBox__sentence --></div>
+		<!-- /.homeStaffBox__staffBox --></div>
+	<!-- /.swiper-slide --></div>
+
+	<div class="swiper-slide">
+		<div class="homeStaffBox__staffBox">
+			<div class="homeStaffBox__image">
+				<figure><img src="img/home/imgStaff06.jpg" alt="スタッフ" /></figure>
+				<p>整備士　00年目</p>
+			<!-- /.homeStaffBox__image --></div>
+			<div class="homeStaffBox__sentence">
+				ここにひとこと程度の文章が<br>テキストで入ります。
+			<!-- /.homeStaffBox__sentence --></div>
+		<!-- /.homeStaffBox__staffBox --></div>
+	<!-- /.swiper-slide --></div>
+
+	<div class="swiper-slide">
+		<div class="homeStaffBox__staffBox">
+			<div class="homeStaffBox__image">
+				<figure><img src="img/home/imgStaff06.jpg" alt="スタッフ" /></figure>
+				<p>整備士　00年目</p>
+			<!-- /.homeStaffBox__image --></div>
+			<div class="homeStaffBox__sentence">
+				ここにひとこと程度の文章が<br>テキストで入ります。
+			<!-- /.homeStaffBox__sentence --></div>
+		<!-- /.homeStaffBox__staffBox --></div>
+	<!-- /.swiper-slide --></div>
+
+	<div class="swiper-slide">
+		<div class="homeStaffBox__staffBox">
+			<div class="homeStaffBox__image">
+				<figure><img src="img/home/imgStaff06.jpg" alt="スタッフ" /></figure>
+				<p>整備士　00年目</p>
+			<!-- /.homeStaffBox__image --></div>
+			<div class="homeStaffBox__sentence">
+				ここにひとこと程度の文章が<br>テキストで入ります。
+			<!-- /.homeStaffBox__sentence --></div>
+		<!-- /.homeStaffBox__staffBox --></div>
+	<!-- /.swiper-slide --></div>
+
+	<div class="swiper-slide">
+		<div class="homeStaffBox__staffBox">
+			<div class="homeStaffBox__image">
+				<figure><img src="img/home/imgStaff06.jpg" alt="スタッフ" /></figure>
+				<p>整備士　00年目</p>
+			<!-- /.homeStaffBox__image --></div>
+			<div class="homeStaffBox__sentence">
+				ここにひとこと程度の文章が<br>テキストで入ります。
+			<!-- /.homeStaffBox__sentence --></div>
+		<!-- /.homeStaffBox__staffBox --></div>
+	<!-- /.swiper-slide --></div>
+
+
+
+
+	<div class="swiper-slide">
+		<div class="homeStaffBox__staffBox">
+		<!-- /.homeStaffBox__staffBox --></div>
+	<!-- /.swiper-slide --></div>
+
+	<div class="swiper-slide hidden-pc">
+		<div class="homeStaffBox__staffBox">
+		<!-- /.homeStaffBox__staffBox --></div>
+	<!-- /.swiper-slide --></div>
+
+
+
+<!-- /.swiper-wrapper --></div>
+<!-- /.swiper --></div>
+<!-- Sliderここまで -->
+    <!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>-->
+<!-- /.inBase --></div>
+<!-- /.sliderBox--typeBasic --></div>
+<!-- スライダーここまで -->
+
+
+
+
+
+
+
+				<!-- /.homeStaffBox__inner --></div><!-- /.homeStaffBox__content --></div>
+			<!-- /.homeStaffBox --></div>
+
+
+
+			<div class="homeRecruitBox">
+				<div class="sectionTitle--type01">
+					<h3>
+						<span>Recruit</span>
+						<small>採用情報</small>
+					</h3>
+				<!-- /.sectionTitle --></div>
+
+				<div class="homeRecruitBox__inner">
+					<figure class="homeRecruitBox__image"><img src="img/home/imgRecruit.jpg" alt="採用情報" /></figure>
+					<div class="homeRecruitBox__content">
+						<h4 class="homeRecruitBox__lead">私たちと一緒に働きませんか？</h4>
+						<p class="homeRecruitBox__sentence">私たち吉岡商事は未経験の方でも大歓迎です！<br>
+							車がお好きな方、接客業に興味をお持ちの方、<br>
+							ぜひ私たちと一緒に働きませんか？<br>
+							募集要項をご確認いただき、メールフォームからご連絡ください。</p>
+						<div class="homeRecruitBox__button">
+							<div class="button--type01">
+								<a href="<?php echo home_url(); ?>/recruit#permanent-staff">正社員</a>
+								<a href="<?php echo home_url(); ?>/recruit#a-part-time-job"><small>アルバイト・パート</small></a>
+							<!-- /.button--type01 --></div>
+							
+						<!-- /.homeRecruitBox__button --></div>
+						<p class="homeRecruitBox__sentence">募集をしていない時期がございますので、その場合はご了承ください。</p>
+					<!-- /.homeRecruitBox__content --></div>
+				<!-- /.homeRecruitBox__inner --></div>
+			<!-- /.homeRecruitBox --></div>
+
+			<div class="homeMediaBox">
+				<div class="homeMediaBox__inner">
+					<h3 class="homeMediaBox__title">YouTube</h3>
+					<div class="homeMediaBox__content">
+						<div class="youtubeBox">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/_qx_dnWZknU?si=eNWwip4_JOc6gzSy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<!-- /.youtubeBox --></div>
+					<!-- /.homeMediaBox__content --></div>
+				<!-- /.homeMediaBox__inner --></div>
+				<div class="homeMediaBox__inner">
+					<h3 class="homeMediaBox__title">Instagram</h3>
+					<div class="homeMediaBox__content">
+
+					<!-- /.homeMediaBox__content --></div>
+				<!-- /.homeMediaBox__inner --></div>
+			<!-- /.homeMediaBox --></div>
+
+			<div class="homeBannerBox">
+				<div class="homeBannerBox__banner"><a href="https://carcon-nara.jp/" target="_blank"><img src="img/home/imgBanner01.png" alt="カーコンビニクラブ板金修理スペック" /></a></div>
+				<div class="homeBannerBox__banner"><a href="https://joycal.jp" target="_blank"><img src="img/home/imgBanner02.png" alt="JOYCAL" /></a></div>
+				<div class="homeBannerBox__banner"><a href="https://www.a1a1.jp" target="_blank"><img src="img/home/imgBanner03.png" alt="カーチェンジA1" /></a></div>
+				<div class="homeBannerBox__banner"><a href="https://www.ones-rent.com/shop/detail.php?location_no=0079-001" target="_blank"><img src="img/home/imgBanner04.png" alt="ワンズレンタカー" /></a></div>
+			<!-- /.homeBannerBox --></div>
+		
+		<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+
+
+        
+	<!-- /#contents --></div>
+
+	
+	<footer id="footer">
+		<div class="inBase"><div class="inBase__inner clearfix">
+			<div class="footer__headBox">
+				<div class="footer__siteTitle"><img src="img/common/siteTitle_w.svg" alt="国土交通省指定民間車検工場 吉岡商事株式会社" /></div>
+				<p><span>Tel.</span>0742-33-7687</p>
+			<!-- /.footer__headBox --></div>
+
+			<div class="footer__informationBox">
+				<div class="footer__mapBox">
+					<div class="googleMapBox">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6562.199123618938!2d135.7884665!3d34.67743660000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60013b00ccbfc79d%3A0x4c447d9675ce5389!2z44CSNjMwLTgwMTQg5aWI6Imv55yM5aWI6Imv5biC5Zub5p2h5aSn6Lev77yV5LiB55uu77yX4oiS77yR77yV!5e0!3m2!1sja!2sjp!4v1723280363846!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<!-- /.googleMapBox --></div>
+					<p>〒630-8014 奈良県奈良市四条大路5-7-15　営業時間：7:30～19:00 年中無休(元旦～3日のみ休業)</p>
+				<!-- /.footer__mapBox --></div>
+				<div class="footer__naviBox">
+					<div class="footer__navi">
+						<ul>
+							<li><span>サービス</span></li>
+							<li><a href="<?php echo home_url(); ?>/inspection">車検</a></li>
+							<li><a href="<?php echo home_url(); ?>/maintenance">修理・整備</a></li>
+							<li><a href="<?php echo home_url(); ?>/sheet-metal">板金修理</a></li>
+							<li><a href="<?php echo home_url(); ?>/wash-coating"><small>洗車・コーティング・エアコン修理</small></a></li>
+							<li><a href="<?php echo home_url(); ?>/sales">車販売・買取</a></li>
+							<li><a href="<?php echo home_url(); ?>/insurance">自動車保険</a></li>
+							<li><a href="<?php echo home_url(); ?>/oil">潤滑油卸売</a></li>
+						</ul>
+						<ul>
+							<li><a href="<?php echo home_url(); ?>/about">私たちについて</a></li>
+							<li><a href="<?php echo home_url(); ?>/works">事例紹介</a></li>
+							<li><a href="<?php echo home_url(); ?>/voice">お客様の声</a></li>
+							<li><a href="<?php echo home_url(); ?>/question">よくあるご質問</a></li>
+							<li><a href="<?php echo home_url(); ?>/message">代表挨拶・スタッフ紹介</a></li>
+							<li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
+							<li><a href="<?php echo home_url(); ?>/recruit">採用情報</a></li>
+							<li><a href="<?php echo home_url(); ?>/blog">お役立ちコラム</a></li>
+							<li><a href="<?php echo home_url(); ?>/privacypolicy">プライバシーポリシー</a></li>
+						</ul>
+					<!-- /.footer__navi --></div>
+					<ul class="footer__navi__bottom">
+						<li><a href="https://page.line.me/183ugfqm?openQrModal=true"><img src="img/common/iconLine.png" alt="Line" /></a></li>
+						<li><a href="#"><img src="img/common/iconInstagram.png" alt="Instagram" /></a></li>
+						<li><a href="#"><img src="img/common/iconYouTube.png" alt="YouTube" /></a></li>
+					</ul>
+				<!-- /.footer__naviBox --></div>
+			<!-- /.footer__informationBox --></div>
+		<!-- /.inBase__inner --></div><!-- /.inBase --></div>
+		
+		<small class="copyright">&copy; 2024 吉岡商事株式会社. All Rights Reserved</small>
+	<!-- /#footer --></footer>
+
+        
+	<p id="btnRise"><a href="#wrapper"><span>TOP</span></a></p>
+	  
+	<div id="btnTelEmpty"></div>
+    
+    <div id="btnPageBottom">
+        <div class="btnPageBottom--btn">
+            <a class="clearfix is-notMovePage" href="tel:0120366664">
+                <i class="fa fa-fw fa-flip-horizontal icon-phone "></i>
+                <span>電話</span>
+            </a>
+            <a class="clearfix is-notMovePage" href="https://page.line.me/183ugfqm?openQrModal=true">
+                <figure><img src="img/common/iconLine.png" alt="LINEでのお問い合わせ" /></figure>
+                <span>LINE</span>
+            </a>
+            <a class="clearfix is-notMovePage" href="https://maps.app.goo.gl/RiWjHvQQ5cVxEgtG8" target="_blank">
+                <i class="fa fa-fw icon-map-marker"></i>
+                <span>マップ</span>
+            </a>
+        <!-- /.btnPageBottom--btn --></div>
+    <!-- /#btnPageBottom --></div>
+
+
+	<div class="sideBannerBox">
+    		<div class="sideBannerBox__banner --type01">
+			<a href="#">
+		                動画で見る吉岡商事
+			</a>
+		<!-- /.sideBanner --></div>
+	<!-- /.sideBannerBox --></div>
+<!-- /#wrapper --></div>
+
+</body>
+</html>
+
+<script data-main="js/main" src="js/require.js"></script>

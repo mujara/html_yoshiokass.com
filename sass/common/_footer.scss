@@ -1,0 +1,215 @@
+@use "../_setting" as s;
+
+#footer {
+	background:s.$colorType02;
+	clear: both;
+	overflow:hidden;
+	.inBase__inner{
+		padding:4em 0 0 0;
+		position:relative;
+		z-index:1;
+		&::after {
+			content:" ";
+			width:10em;
+			height:100%;
+			display:block;
+			background:#c30404;
+			position:absolute;
+			bottom:-3em;
+			right:-16em;
+			transform: skewX(-35deg);
+			z-index:-1;
+			@include s.media(m){
+				bottom: unset;
+				top:0;
+			}
+		}
+	}
+}
+
+.footer__headBox{
+	display:block;
+	margin-bottom:2em;
+	@include s.media(m){
+		width:100%;
+		display:flex;
+		align-items:flex-end;
+	}
+	p{
+		font-family: "Inter", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
+		font-size:1.875em;
+		color:#FFF;
+		text-align:center;
+		@include s.media(m){
+			text-align:left;
+		}
+		span{
+			font-size:0.66em;
+			display:inline-block;
+			margin-right:0.5em;
+		}
+	}
+}
+
+.footer__siteTitle{
+	display:block;
+	width:16em;
+	margin:0 auto 0.5em;
+	@include s.media(m){
+		width:20em;
+		margin:0;
+		margin-right:1em;
+	}
+	img{
+		width:100%;
+	}
+}
+
+.footer__informationBox {
+	display:block;
+	@include s.media(m){
+		width:100%;
+		display:flex;
+		justify-content:space-between;
+	}
+}
+
+.footer__mapBox{
+	display:block;
+	@include s.media(m){
+		width:55.5%;
+	}
+	.googleMapBox{
+		margin-bottom:1.5em;
+		@include s.media(m){
+			padding-bottom:60%;
+		}
+	}
+	p{
+		color:#FFF;
+		margin-bottom:1.5em;
+		@include s.media(m){
+			font-size:0.875em;
+		}
+	}
+}
+.footer__naviBox{
+	display:block;
+	@include s.media(m){
+		width:39%;
+	}
+}
+
+#wrapper .footer__navi {
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:3em;
+	@include s.media(m){
+		margin-bottom:6em;
+	}
+	ul{
+		display:block;
+		border-bottom:#f98686 dotted 1px;
+		@include s.media(m){
+			border-bottom:none;
+		}
+		&:nth-child(1){
+			width:45%;
+			@include s.media(m){
+				width:55%;
+			}
+			li a::before {
+				content:"\02212  ";
+			}
+		}
+		&:nth-child(2){
+			width:45%;
+			@include s.media(m){
+				width:40%;
+			}
+		}
+	}
+	li{
+		padding:0.7em 0;
+		border-top:#f98686 dotted 1px;
+		@include s.media(m){
+			padding:0 0 5px;
+			border:none;
+		}
+		a{
+			font-size:0.9em;
+			color:#FFF;
+			text-decoration:none;
+			font-family: "FP-こぶりなゴシック StdN W6";
+			@include s.media(m){
+				font-size:0.875em;
+			}
+			&:hover {
+				color: #000;
+			}
+		}
+		span{
+			font-size:0.875em;
+			color:#FFF;
+			font-family: "FP-こぶりなゴシック StdN W6";
+		}
+	}
+	&__bottom{
+		width:100%;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		margin-bottom:1em;
+		display:none;
+		@include s.media(m){
+			justify-content: unset;
+			margin-bottom:0;
+			display:flex;
+		}
+		li{
+			margin-right:2em;
+			a{
+				display:block;
+				opacity:1;
+				line-height:1.7em;
+				&:hover{
+					opacity:.8;
+				}
+			}
+			&:nth-child(1){
+				width:2em;
+				@include s.media(m){
+					width:1.68em;
+				}
+			}
+			&:nth-child(2){
+				width:2em;
+				@include s.media(m){
+					width:1.68em;
+				}
+			}
+			&:nth-child(3){
+				width:7em;
+				padding-top:0.3em;
+				@include s.media(m){
+					width:5em;
+					padding-top:1em;
+				}
+			}
+		}
+		img{
+			width:100%;
+		}
+	}
+}
+
+#container .footer__navi__bottom li:nth-child(3){
+	@include s.media(m){
+		padding-top: 0.5em;
+        	margin-left: 1em;
+	}
+}

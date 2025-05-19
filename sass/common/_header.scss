@@ -1,0 +1,117 @@
+@use "../_setting" as s;
+
+#header {
+	position: relative;
+	transition: .3s;
+	.inBase{
+		@include s.media(m){
+			display:flex;
+			justify-content:space-between;
+		}
+	}
+}
+
+.header {
+	&__siteTitleBox {
+		display:block;
+		padding:1em 0;
+		width:60%;
+		@include s.media(m){
+			padding:1.5em 0;
+			width:22%;
+		}
+	}
+	&__siteTitle{
+		img{
+			width:100%;
+		}
+	}
+	&__contentBox{
+		display:block;
+		@include s.media(m){
+			width:70%;
+		}
+	}
+	&__informationBox{
+		display:none;
+		@include s.media(m){
+			width:100%;
+			display:flex;
+			justify-content:space-between;
+			align-items:flex-end;
+		}
+	}
+	&__information{
+		color:s.$colorType02;
+		span{
+			display:inline-block;
+			margin-right:1em;
+			&:nth-child(1){
+				font-size:1.25em;
+				font-family: "Inter", sans-serif;
+				font-optical-sizing: auto;
+				font-weight: 700;
+				font-style: normal;
+			}
+			&:nth-child(2){
+				font-family: "FP-こぶりなゴシック StdN W6";
+			}
+			&:nth-child(3){
+				font-size:0.68em;
+				font-family: "FP-こぶりなゴシック StdN W6";
+			}
+			&:nth-child(4){
+				font-size:1.25em;
+				font-family: "Inter", sans-serif;
+				font-optical-sizing: auto;
+				font-weight: 700;
+				font-style: normal;
+				position:relative
+			}
+			.icon-phone{
+				font-size:0.7em;
+				margin-right:0.3em;
+		       	}
+		}
+	}
+	&__contactButton{
+		@include s.media(m){
+			width:38%;
+			display:flex;
+			justify-content:space-between;
+		}
+		li{
+			a{
+				line-height:1.7em;
+				display:block;
+				position:relative;
+				padding:0.8em 1em;
+				z-index:1;
+				font-size:0.875em;
+				font-family: "FP-こぶりなゴシック StdN W6";
+				color:#FFF;
+				&::before{
+					content:"";
+					display:block;
+					width:100%;
+					height:100%;
+					z-index:-1;
+					background:#666;
+					position:absolute;
+					top:0;
+					left:0;
+					transform: skewX(-30deg);
+				}
+				&:hover{
+					color:#000;
+				}
+			}
+			&:nth-child(1) a::before{
+				background:#6FBA2C;
+			}
+			&:nth-child(2) a::before{
+				background:s.$colorType02;
+			}
+		}
+	}
+}

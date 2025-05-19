@@ -1,0 +1,1434 @@
+@use "../_setting" as s;
+
+body.home{
+	.mainVisual {
+		display:block;
+		.inBase{
+			position:relative;
+		}
+		&__image{
+			width:116%;
+			margin-left:-8%;
+			@include s.media(m){
+				width:160%;
+				margin-left:-30%;
+			}
+			img{
+				width:100%;
+			}
+			video{
+				width:100%;
+			}
+			&.is--PC{
+				display:none;
+				@include s.media(m){
+					display:block;
+				}
+				.adjustBox{
+					padding-top: 44.2477%;
+				}
+			}
+			&.is--SP{
+				display:block;
+				@include s.media(m){
+					display:none;
+				}
+			}
+		}
+		&__videoBox{
+			width: 100%;
+			height: 100%;
+			aspect-ratio: 15 / 16;
+			overflow:hidden;
+			@include s.media(m){
+				aspect-ratio: 113 / 50;
+			}
+			&::before{
+				content: " ";
+				width:10.625em;
+				height:100%;
+				display: block;
+				position:absolute;
+				left:-3em;
+				top:0;
+				background:s.$colorType02;
+				transform:rotate(15deg);
+				mix-blend-mode: multiply;
+				transform: skewX(-30deg);
+				@include s.media(m){
+					width:24.75em;
+					position:absolute;
+					left:unset;
+					right:-7em;
+					top:0;
+				}
+			}
+		}
+		&__copy{
+			font-size:2em;
+			font-family: "FP-こぶりなゴシック StdN W6";
+			position:absolute;
+			top:11em;
+			left:0em;
+			text-align:right;
+			@include s.media(m){
+				top:9em;
+				left:unset;
+				right:-1em;
+				font-size:2.5em;
+			}
+			span{
+				display:inline-block;
+				color:#FFF;
+				text-shadow: 0px 0px 6px rgba(64, 1, 1, 1);
+				@include s.media(m){
+					margin-bottom:0.3em;
+				}
+				&:nth-child(3){
+					padding-right:2.5em;
+					@include s.media(m){
+						padding-right:3em;
+					}
+				}
+			}
+		}
+	}
+	#contents{
+		overflow:hidden;
+		position:relative;
+		@include s.media(m){
+			margin-top:-7em;
+		}
+		.contentSideImage01{
+			width:63.25em;
+			display:none;
+			position:absolute;
+			top:-40em;
+			left:0;
+			z-index:-1;
+			display:none;
+			@include s.media(m){
+				display:block;
+				margin-left:-25em;
+			}
+			@include s.media(xl){
+				margin-left:-20%;
+			}
+			@include s.media(xxl){
+				margin-left:0;
+			}
+			img{
+				width:100%;
+			}
+		}
+		.contentSideImage02{
+			width:58.63em;
+			display:none;
+			position:absolute;
+			top:160em;
+			right:0;
+			z-index:-1;
+			display:none;
+			@include s.media(m){
+				display:block;
+				margin-right:-50em;
+			}
+			@include s.media(xl){
+				margin-right:-45%;
+			}
+			@include s.media(xxl){
+				margin-left:0;
+			}
+			img{
+				width:100%;
+			}
+		}
+	}
+}
+
+#wrapper .homeToMovieButton{
+	display:block;
+	@include s.media(m){
+		display:none;
+	}
+	a{
+		font-family: "Noto Sans JP", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
+		display:block;
+		width:118%;
+		margin-left:-9%;
+		background:s.$colorType02;
+		color:#FFF;
+		font-size:1.25em;
+		text-align:center;
+		padding:1em 0.5em;
+	}
+}
+
+#wrapper .homeNewsBox{
+	display:block;
+	background:s.$colorType03;
+	padding:1em 0;
+	margin-bottom:3em;
+	@include s.media(m){
+		padding:1em;
+		margin-bottom:6em;
+	}
+	.inBase__inner{
+		display:block;
+		position:relative;
+		@include s.media(m){
+			display:flex;
+			align-items:center;
+		}
+	}
+	&__title{
+		color:s.$colorType02;
+		font-family: "Inter", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
+		display:block;
+		width:6em;
+		position:relative;
+		margin-bottom:1em;
+		@include s.media(m){
+			margin-bottom:0;
+		}
+		&::before{
+			content: " ";
+			width:1px;
+			height:1.4em;
+			display: block;
+			position:absolute;
+			right:1.5em;
+			top:50%;
+			margin-top:-0.7em;
+			background:s.$colorType02;
+			-webkit-transition: all .2s ease;
+			transition: all .2s ease;
+			transform:rotate(15deg);
+			@include s.media(m){
+				height:2.4em;
+				margin-top:-1.2em;
+			}
+		}
+	}
+	&__content{
+		font-size:1em;
+		font-family: "FP-こぶりなゴシック StdN W3";
+		padding-right:6em;
+		@include s.media(m){
+			width:60em;
+			font-size:0.875em;
+			parring-right:0;
+		}
+		span{
+			display:inline-block;
+			margin-right:1em;
+			&:nth-child(1){
+				position:absolute;
+				top:0;
+				left:6em;
+				@include s.media(m){
+					position:static;
+				}
+			}
+		}
+		a{
+			line-height:1.7;
+			&:hover{
+				color:s.$colorType02;
+			}
+		}
+	}
+	&__button{
+		position:absolute;
+		bottom:-0.6em;
+		right:-3.5em;
+		@include s.media(m){
+			position:static;
+		}
+		a{
+			font-family: "FP-こぶりなゴシック StdN W3";
+			display:inline-block;
+			padding:0.7em 3em 0.7em 2em;
+			position:relative;
+			text-align:center;
+			color:s.$colorType02;
+			min-width:11em;
+			line-height:1.7;
+			@include s.media(m){
+				background:s.$colorType02;
+				color:#FFF;
+			}
+			&::before{
+				@include s.media(m){
+					content: " ";
+					width:1.5em;
+					height:1px;
+					display: block;
+					position:absolute;
+					right:0;
+					top:50%;
+					margin-top:-0.5px;
+					background:#FFF;
+					-webkit-transition: all .2s ease;
+					transition: all .2s ease;
+				}
+			}
+			&::after{
+		                content: "\f105";
+		                font-family: 'icomoon';
+		                margin-left: 0.5em;
+				@include s.media(m){
+		                	content: none;
+				}
+			}
+			&:hover{
+				background:#000;
+				&::before{
+					width:0;
+				}
+			}
+		}
+	}
+}
+
+#wrapper .homeServiceBox{
+	display:block;
+	margin-bottom:4em;
+	&__button{
+		&--type01{
+			a{
+				width:130%;
+				display:flex;
+				align-items:center;
+				position:relative;
+				z-index:1;
+				margin-left:-7em;
+				margin-bottom:0.5em;
+				line-height:1.7;
+				@include s.media(m){
+					width:100%;
+					margin-bottom:4em;
+					margin-left:-3.75em;
+				}
+				&::before{
+					content: " ";
+					width:70%;
+					height:100%;
+					display: block;
+					position:absolute;
+					right:-6%;
+					top:0;
+					background:s.$colorType04;
+					-webkit-transition: all .2s ease;
+					transition: all .2s ease;
+					z-index:-1;
+					@include s.media(m){
+						right:0;
+						transform: skewX(30deg);
+					}
+				}
+				&::after{
+					content: " ";
+					width:0.4em;
+					height:1.5em;
+					display: block;
+					position:absolute;
+					right:1em;
+					top:50%;
+					margin-top:-0.5em;
+					background: url(../img/common/imgArrow01.svg) no-repeat center top;
+					background-size:100% auto;
+					-webkit-transition: all .2s ease;
+					transition: all .2s ease;
+					@include s.media(m){
+						width:1.125em;
+						height:4em;
+						right:4em;
+						margin-top:-2em;
+					}
+				}
+				img{
+					width:100%;
+				}
+				&:hover{
+					&::before{
+						background:#ebe2e2;
+					}
+					
+					.homeServiceBox__button--type01__title::before{
+						background:#ebe2e2;
+					}
+				}
+			}
+			&.--typeSecond{
+				a{
+					@include s.media(m){
+						margin-left:10em;
+					}
+				}
+			}
+			&__image{
+				width:70%;
+				display:block;
+				position:relative;
+				@include s.media(m){
+					width:35.4em;
+				}
+				figure{
+					width:100%;
+					display:block;
+					mask-image: url("../img/home/serviceImageClipPath_sp.svg");
+					mask-repeat: no-repeat;
+					mask-position: 0 0;
+					mask-size: 100%;
+					/* Chrome, Safari用 */
+					-webkit-mask-image: url("../img/home/serviceImageClipPath_sp.svg");
+					-webkit-mask-repeat: no-repeat;
+					-webkit-mask-position: 0 0;
+					-webkit-mask-size: 100%;
+					overflow:hidden;
+					@include s.media(m){
+						mask-image: url("../img/home/serviceImageClipPath.svg");
+						mask-repeat: no-repeat;
+						mask-position: 0 0;
+						mask-size: 100%;
+						/* Chrome, Safari用 */
+						-webkit-mask-image: url("../img/home/serviceImageClipPath.svg");
+						-webkit-mask-repeat: no-repeat;
+						-webkit-mask-position: 0 0;
+						-webkit-mask-size: 100%;
+					}
+					&::before{
+						content: " ";
+						width:100%;
+						height:100%;
+						display: block;
+						position:absolute;
+						left:0;
+						top:0;
+						background: rgb(82,82,82);
+						background: linear-gradient(0deg, rgba(82,82,82,1) 0%, rgba(82,82,82,0.4) 40%, rgba(82,82,82,0) 100%);
+						-webkit-transition: all .2s ease;
+						transition: all .2s ease;
+						mix-blend-mode: multiply;
+					}
+				}
+			}
+			&__title{
+				font-size:1.8em;
+				color:#FFF;
+				font-family: "FP-こぶりなゴシック StdN W6";
+				position:absolute;
+				bottom:0.3em;
+				left:4.3em;
+				display:block;
+				@include s.media(m){
+					font-family: "FP-こぶりなゴシック StdN W3";
+					font-size:2.5em;
+					bottom:0.7em;
+					left:5em;
+				}
+				&::before{
+					content: " ";
+					width:6em;
+					height:1px;
+					display: block;
+					position:absolute;
+					right:-6.5em;
+					bottom:0.5em;
+					margin-top:-0.5px;
+					background:s.$colorType04;
+					-webkit-transition: all .2s ease;
+					transition: all .2s ease;
+					@include s.media(m){
+						bottom:50%;
+					}
+				}
+			}
+			&__inner{
+				color:s.$colorType02;
+				position:relative;
+				h5{
+					width: 14em;
+					font-size:1.3em;
+					display:inline-block;
+					font-family: "FP-こぶりなゴシック StdN W6";
+					line-height:1.4;
+					background:rgba(s.$colorType04,.7);
+					padding:0.3em 2em 0.3em 0.5em;
+					margin-left:-4em;
+					@include s.media(m){
+						width: unset;
+						font-size:1.5em;
+						margin:0 0 1em -2em;
+						padding:0;
+						background:none;
+					}
+				}
+				p{
+					width: 16em;
+					font-size:0.7em;
+					display:none;
+					font-family: "FP-こぶりなゴシック StdN W3";
+					margin:0;
+					@include s.media(m){
+						width: auto;
+						font-size:1em;
+						margin:0;
+						display:block;
+					}
+					br{
+						display:none;
+						@include s.media(m){
+							display:inline;
+						}
+					}
+				}
+			}
+		}
+		&__sentence__sp{
+			width:90%;
+			display:block;
+			margin:0 auto 1.5em;
+			@include s.media(m){
+				display:none;
+			}
+			br{
+				display:none;
+				@include s.media(m){
+					display:inline;
+				}
+			}
+		}
+	}
+	&__inner{
+		display:block;
+		@include s.media(m){
+			display:flex;
+			justify-content:space-between;
+			flex-wrap:wrap;
+		}
+	}
+	&__button{
+		&--type02{
+			width:100%;
+			display:block;
+			@include s.media(m){
+				width:48%;
+			}
+			a{
+				width:100%;
+				display:flex;
+				align-items:center;
+				position:relative;
+				z-index:1;
+				margin-bottom:1em;
+				line-height:1.7;
+				@include s.media(m){
+					margin-bottom:2em;
+				}
+				&::before{
+					content: " ";
+					width:70%;
+					height:100%;
+					display: block;
+					position:absolute;
+					right:0;
+					top:0;
+					background:s.$colorType04;
+					-webkit-transition: all .2s ease;
+					transition: all .2s ease;
+					z-index:-1;
+				}
+				&::after{
+					content: " ";
+					width:0.4em;
+					height:1.5em;
+					display: block;
+					position:absolute;
+					right:1em;
+					top:50%;
+					margin-top:-0.5em;
+					background: url(../img/common/imgArrow01.svg) no-repeat center top;
+					background-size:100% auto;
+					-webkit-transition: all .2s ease;
+					transition: all .2s ease;
+					@include s.media(m){
+						width:0.625em;
+						height:2.3125em;
+						margin-top:-3em;
+						right:1em;
+					}
+				}
+				img{
+					width:100%;
+				}
+				&:hover{
+					&::before{
+						background:#ebe2e2;
+					}
+					
+					.homeServiceBox__button--type02__title::before{
+						background:#ebe2e2;
+					}
+					.homeServiceBox__button--type02__image figure::after{
+						background:#ebe2e2;
+					}
+				}
+			}
+			&__image{
+				width:80%;
+				display:block;
+				position:relative;
+				figure{
+					width:100%;
+					display:block;
+					overflow:hidden;
+					&::before{
+						content: " ";
+						width:100%;
+						height:100%;
+						display: block;
+						position:absolute;
+						left:0;
+						top:0;
+						background: rgb(82,82,82);
+						background: linear-gradient(0deg, rgba(82,82,82,1) 0%, rgba(82,82,82,0.4) 40%, rgba(82,82,82,0) 100%);
+						-webkit-transition: all .2s ease;
+						transition: all .2s ease;
+						mix-blend-mode: multiply;
+					}
+					&::after{
+						content: " ";
+						width:70%;
+						height:100%;
+						display: block;
+						position:absolute;
+						right:-1px;
+						top:0;
+						background: s.$colorType04;
+						-webkit-transition: all .2s ease;
+						transition: all .2s ease;
+						clip-path: polygon(50% 0%, 100% 100%, 100% 0);
+					}
+				}
+			}
+			&__title{
+				font-size:1.3em;
+				color:#FFF;
+				font-family: "FP-こぶりなゴシック StdN W6";
+				position:absolute;
+				bottom:0.5em;
+				left:0.7em;
+				display:block;
+				@include s.media(m){
+					font-size:1.6em;
+					font-family: "FP-こぶりなゴシック StdN W3";
+				}
+				&::before{
+					content: " ";
+					width:6em;
+					height:1px;
+					display: block;
+					position:absolute;
+					right:-6.5em;
+					bottom:50%;
+					margin-top:-0.5px;
+					background:s.$colorType04;
+					-webkit-transition: all .2s ease;
+					transition: all .2s ease;
+				}
+			}
+			&__inner{
+				color:s.$colorType02;
+				position:relative;
+				h5{
+					width:12em;
+					font-size:1.1em;
+					display:block;
+					font-family: "FP-こぶりなゴシック StdN W6";
+					margin:0 0 0.25em 0;
+					padding-right:2em;
+					@include s.media(m){
+						width:unset;
+						font-size:1.25em;
+						padding-right:0;
+					}
+				}
+				p{
+					font-size:0.7em;
+					display:none;
+					font-family: "FP-こぶりなゴシック StdN W3";
+					margin:0 0.5em 0 0.5em;
+					padding-right:2em;
+					@include s.media(m){
+						font-size:0.875em;
+						display:block;
+					}
+				}
+			}
+		}
+	}
+}
+
+#wrapper .homeFeatureBox{
+	display:block;
+	position:relative;
+	margin-bottom:2em;
+	&__image{
+		width:178%;
+		margin-left:-39%;
+		display:block;
+		img{
+			width:100%;
+		}
+	}
+	.sectionTitle--type01{
+		width:100%;
+		display:block;
+		position:absolute;
+		top:1em;
+		left:0;
+		text-align:center;
+		@include s.media(m){
+			top:4em;
+		}
+		span{
+			text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+			@include s.media(m){
+				text-shadow: unset;
+			}
+		}
+		small{
+			text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+			@include s.media(m){
+				text-shadow: unset;
+			}
+		}
+	}
+	&__featureListBox{
+		display:block;
+		width:100%;
+		display:flex;
+		justify-content:center;
+		flex-wrap:wrap;
+		margin-top:-6em;
+		@include s.media(m){
+			width:100%;
+			display:flex;
+			justify-content:center;
+			flex-wrap:wrap;
+			margin-top:-13em;
+		}
+	}
+	&__featureList{
+		display:block;
+		background:s.$colorType04;
+		border-radius:0.5em;
+		border:s.$colorType02 solid 2px;
+		padding:1.5em 1em 1em;
+		margin:0 1% 1em;
+		position:relative;
+		@include s.media(m){
+			width:31%;
+			margin:0 1% 1.5em;
+			border:s.$colorType02 solid 4px;
+			padding:2em;
+			text-align:center;
+		}
+	}
+	&__featureListIcon{
+		display:block;
+		width:3em;
+		background:s.$colorType03;
+		border-radius:50%;
+		position:absolute;
+		top:1.5em;
+		left:30%;
+		@include s.media(m){
+			width:5.75em;
+			margin:0 auto 1em;
+			position:static;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__featureListTitle{
+		color:s.$colorType02;
+		font-size:1.6em;
+		letter-spacing:0.2em;
+		margin:0.1em 0 1em 3em;
+		text-align:center;
+		@include s.media(m){
+			font-size:2.5em;
+			margin:0 0 0.3em 0;
+		}
+	}
+	&__featureListSntence{
+		color:s.$colorType02;
+		font-size:1em;
+		@include s.media(m){
+			font-size:1em;
+		}
+		br{
+			display:none !important;
+			@include s.media(m){
+				display:inline !important;
+			}
+		}
+	}
+}
+
+#wrapper .homeCaseBox{
+	margin-bottom:3em;
+	&__inner{
+		display:block;
+		margin-bottom:3em;
+		@include s.media(m){
+			width:100%;
+			//display:flex;
+			//justify-contet:center;
+		}
+	}
+	&__caseBox{
+		margin:0 0 1.5em;
+		@include s.media(m){
+			display:block;
+			//width:31%;
+			width:100%;
+			margin:0 1% 1.5em;
+		}
+		>a{
+			display:block;
+			background:s.$colorType04;
+			color:#000;
+			line-height:1.7;
+			padding-bottom:1em;
+			img{
+				opacity:1;
+				-webkit-transition: all .2s ease;
+				transition: all .2s ease;
+			}
+			&:hover{
+				background:#ebe2e2;
+				img{
+					opacity:.8;
+				}
+			}
+		}
+	}
+	&__image{
+		display:block;
+		img{
+			width:100%;
+		}
+		.adjustBox::before{
+			padding-top: 56%;
+		}
+	}
+	&__content{
+		display:block;
+		position:relative;
+	}
+	&__category{
+		background:s.$colorType03;
+		color:#FFF;
+		font-family: "FP-こぶりなゴシック StdN W6";
+		padding:0.3em 0.5em 0.3em 1em;
+		position:relative;
+		display:inline-block;
+		max-width:67%;
+		margin-bottom:0.5em;
+		&::after{
+			content: " ";
+			width:1.5em;
+			height:100%;
+			display: block;
+			position:absolute;
+			right:-1.49em;
+			top:0;
+			background: s.$colorType03;
+			-webkit-transition: all .2s ease;
+			transition: all .2s ease;
+			clip-path: polygon(0 100%, 100% 0, 0 0);
+		}
+		span,a{
+			display:inlie-block;
+			+span{
+				margin-left:1em;
+			}
+		}
+		+.homeCaseBox__date{
+			top:1em;
+		}
+		+.homeCaseBox__date+.homeCaseBox__information{
+			margin-top:0;
+		}
+	}
+	&__date{
+		font-size:0.875em;
+		font-family: "Inter", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
+		color:s.$colorType02;
+		position:absolute;
+		top:-2em;
+		right:1em;
+	}
+	&__information{
+		margin-top:2.5em;
+		th{
+			padding:0.3em 0.5em 0.3em 1em;
+			font-family: "FP-こぶりなゴシック StdN W6";
+			background:none;
+		}
+		td{
+			padding:0.3em 1em 0.3em 0.5em;
+			font-family: "FP-こぶりなゴシック StdN W6";
+			background:none;
+		}
+	}
+	table:not(.has-border-color) :where(th, td) {
+		border:none;
+	}
+	table tr:nth-of-type(2n+1){
+		background:none;
+	}
+}
+
+#wrapper .homePageBox{
+	display:block;
+	margin-bottom:3em;
+	@include s.media(m){
+		display:flex;
+		width:100%;
+		justify-content:space-between;
+		flex-wrap:wrap;
+		margin-bottom:6em;
+	}
+	&__inner{
+		display:block;
+		margin-bottom:1em;
+		@include s.media(m){
+			width:48%;
+			margin-bottom:2em;
+		}
+		a{
+			display:flex;
+			align-items:center;
+			position:relative;
+			line-height:1.7;
+			overflow:hidden;
+			background: s.$colorType02;
+			opacity:1;
+			&::after{
+				content: " ";
+				width:0.848em;
+				height:3.2em;
+				display: block;
+				position:absolute;
+				right:1em;
+				top:50%;
+				margin-top:-1.6em;
+				background: url(../img/common/imgArrow02.svg) no-repeat center top;
+				background-size:100% auto;
+				-webkit-transition: all .2s ease;
+				transition: all .2s ease;
+				z-index:1;
+				@include s.media(m){
+					width:1.06em;
+					height:4em;
+					right:2em;
+					margin-top:-2em;
+				}
+			}
+			&:hover{
+				opacity:.6;
+			}
+			figure{
+				width:40%;
+				position:relative;
+				img{
+					width:100%;
+				}
+				&::before{
+					content: " ";
+					width:47.6%;
+					height:100%;
+					display: block;
+					position:absolute;
+					top:0;
+					right:-1px;
+					background: #FFF;
+					clip-path: polygon(100% 100%, 100% 0, 0 0);
+					@include s.media(m){
+					}
+				}
+			}
+			p{
+				&::after{
+					content: " ";
+					width:32%;
+					height:155%;
+					display: block;
+					position:absolute;
+					top:0;
+					left:calc(8% + 1px);
+					background: s.$colorType02;
+					clip-path: polygon(100% 100%, 100% 0, 10% 0);
+					mix-blend-mode: multiply;
+				}
+				&::before{
+					content: " ";
+					width:1px;
+					height:100%;
+					display: block;
+					position:absolute;
+					top:0;
+					left:calc(40%);
+					background:s.$colorType02;
+					z-index:1;
+				}
+				span{
+					position:relative;
+					z-index:1;
+					color:#FFF;
+					font-size:1.25em;
+					font-family: "FP-こぶりなゴシック StdN W6";
+				}
+			}
+		}
+	}
+}
+
+#wrapper .homeMessageBox{
+	display:block;
+	position:relative;
+	margin-bottom:2em;
+	@include s.media(m){
+		margin-bottom:4em;
+	}
+	&::before{
+		content: " ";
+		width:100vw;
+		height:100%;
+		display: block;
+		position:absolute;
+		top:0;
+		right:-39%;
+		margin-right:-100vw;
+		background:#F4F4F4;
+		mix-blend-mode: multiply;
+	}
+	&__image{
+		width:178%;
+		margin-left:-39%;
+		display:block;
+		margin-bottom:2em;
+		@include s.media(m){
+			mix-blend-mode: multiply;
+			margin-bottom:0;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__inner{
+		display:block;
+		@include s.media(m){
+			width:100%;
+			position:absolute;
+			top:0;
+			left:0;
+		}
+	}
+	.sectionTitle--type01{
+		position:absolute;
+		top:5.5em;
+		right:3em;
+		@include s.media(m){
+			top:8em;
+			right:unset;
+			left:0;
+		}
+		h3{
+			@include s.media(m){
+				color:#FFF;
+				text-align:left;
+			}
+		}
+	}
+	&__content{
+		display:block;
+		@include s.media(m){
+			padding-top:8em;
+			padding-left:48%;
+			padding-right:10%;
+		}
+		h4{
+			font-size:1.25em;
+			font-family: "FP-こぶりなゴシック StdN W6";
+			margin-bottom:1em;
+		}
+	}
+	&__name{
+		text-align:right;
+		font-size:1.1em;
+		@include s.media(m){
+			font-size:1.2em;
+		}
+	}
+}
+
+#wrapper .homeStaffBox{
+	display:block;
+	margin-bottom:6em;
+	@include s.media(m){
+		margin-bottom:4em;
+	}
+	&__content{
+		display:block;
+		//padding-left:50%;
+	}
+	&__inner{
+		//width:100vw;
+		//display:flex;
+		//flex-wrap:wrap;
+		//margin-left:-50vw;
+		display:block;
+		@include s.media(m){
+			height:27.5em;
+		}
+	}
+	&__staffBox{
+		width:25em;
+		height:19.5em;
+		display:block;
+		overflow:hidden;
+		position:relative;
+		mask-image: url("../img/home/staffImageClipPath.svg");
+		mask-repeat: no-repeat;
+		mask-position: 0 0;
+		mask-size: 100%;
+		/* Chrome, Safari用 */
+		-webkit-mask-image: url("../img/home/staffImageClipPath.svg");
+		-webkit-mask-repeat: no-repeat;
+		-webkit-mask-position: 0 0;
+		-webkit-mask-size: 100%;
+		//margin-left:-12em;
+		-webkit-transition: all .2s ease;
+		transition: all .2s ease;
+		@include s.media(m){
+			width:31.5em;
+			height:23.5em;
+		}
+		&:nth-child(even){
+			margin-top:4em;
+			margin-left:-7em;
+		}
+	}
+	.sliderBox--typeBasic{
+		.inBase{
+			overflow:visible;
+		}
+		.swiper{
+			overflow:visible;
+			padding-top:4em;
+		}
+		.swiper-wrapper{
+			padding-right:30%;
+		}
+		.swiper-slide{
+			margin-right:5em!important;
+			@include s.media(m){
+				margin-right:4em!important;
+			}
+			@include s.media(xl){
+				margin-right:-1em!important;
+			}
+			.homeStaffBox__staffBox{
+				margin-top:-4em;
+				margin-left:-2.5em;
+			}
+			&.swiper-slide-active{
+				+.swiper-slide{
+					.homeStaffBox__staffBox{
+						@include s.media(m){
+							margin-top:0;
+							margin-left:0;
+						}
+					}
+					+.swiper-slide+.swiper-slide{
+						.homeStaffBox__staffBox{
+							@include s.media(m){
+								margin-top:0;
+								margin-left:0;
+							}
+						}
+						+.swiper-slide+.swiper-slide{
+							.homeStaffBox__staffBox{
+								@include s.media(m){
+									margin-top:0;
+									margin-left:0;
+								}
+							}
+						}
+					}
+				}
+			}
+			&.swiper-slide-prev{
+				.homeStaffBox__staffBox{
+					@include s.media(m){
+						margin-top:0;
+						margin-left:0;
+					}
+				}
+			}
+		}
+	}
+	.swiper-wrapper .swiper-slide:nth-child(odd) .homeStaffBox__staffBox{
+			//margin-top:-4em;
+			//margin-left:-2.5em;
+	}
+	&__image{
+		display:block;
+		position:relative;
+		figure{
+			display:block;
+			position:relative;
+			&::before{
+				content: " ";
+				width:100%;
+				height:100%;
+				display: block;
+				position:absolute;
+				left:0;
+				top:0;
+				background: rgb(139,139,139);
+				background: linear-gradient(0deg, rgba(139,139,139,1) 0%, rgba(139,139,139,0.5) 50%, rgba(139,139,139,0) 100%);
+				-webkit-transition: all .2s ease;
+				transition: all .2s ease;
+				mix-blend-mode: multiply;
+			}
+		}
+		img{
+			width:100%;
+		}
+		p{
+			display:block;
+			position:absolute;
+			bottom:2.1em;
+			left:34%;
+			color:#FFF;
+			font-size:1.1em;
+			font-family: "FP-こぶりなゴシック StdN W3";
+			@include s.media(m){
+				left:37%;
+				font-size:1.25em;
+				bottom:1em;
+			}
+		}
+	}
+	&__sentence{
+		width:100%;
+		height:6.5em;
+		color:#FFF;
+		font-family: "FP-こぶりなゴシック StdN W3";
+		font-size:0.875em;
+		padding:0.5em 10% 1em 42%;
+		background:#525252;
+		position:absolute;
+		left:0;
+		bottom:0;
+		@include s.media(m){
+			height:5em;
+			padding:1em 10% 1em 45%;
+		}
+		br{
+			display:none;
+			@include s.media(m){
+				display:inline;
+			}
+		}
+	}
+}
+
+
+#wrapper .homeRecruitBox{
+	display:block;
+	position:relative;
+	margin-bottom:2em;
+	@include s.media(m){
+		margin-bottom:4em;
+	}
+	&__inner{
+		position:relative;
+	}
+	&__image{
+		width:140%;
+		margin-left:-20%;
+		display:block;
+		margin-bottom:2em;
+		margin-top:-7.5em;
+		position:relative;
+		z-index:-1;
+		@include s.media(m){
+			width:178%;
+			margin-left:-39%;
+			margin-bottom:0;
+			margin-top:0;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__content{
+		display:block;
+		font-family: "FP-こぶりなゴシック StdN W3";
+		@include s.media(m){
+			width:100%;
+			position:absolute;
+			top:0;
+			left:0;
+			text-align:center;
+			padding-top:5em;
+		}
+	}
+	&__lead{
+		font-size:1.3em;
+		font-family: "FP-こぶりなゴシック StdN W6";
+		margin-bottom:0.5em;
+		@include s.media(m){
+			font-family: "FP-こぶりなゴシック StdN W3";
+			font-size:1.875em;
+			margin-bottom:1em;
+		}
+	}
+	&__sentence{
+		font-family: "FP-こぶりなゴシック StdN W3";
+		margin-bottom:1.5em;
+		font-size:1.1em;
+		@include s.media(m){
+			font-size:1em;
+		}
+	}
+	&__button{
+		.button--type01{
+			a{
+				width:48%;
+				padding:0.6em 1em 0.6em 1em;
+				margin-bottom:1em;
+				font-size:1em;
+				text-align:center;
+				@include s.media(m){
+					font-size:1.1em;
+					width:14em;
+					padding:0.6em 1em;
+					margin-bottom:1.5em;
+				}
+				+a{
+					width:48%;
+					margin-left:2%;
+					@include s.media(m){
+						width:14em;
+						margin-left:3em;
+					}
+					small{
+						@include s.media(m){
+							font-size:1em;
+						}
+					}
+				}
+				&::before{
+					width:1em;
+					@include s.media(m){
+						width:1.5em;
+					}
+				}
+				&::after{
+					left:0.5em;
+					@include s.media(m){
+						left:1.1em;
+					}
+				}
+				&:hover{
+					&::before{
+						width:0;
+						@include s.media(m){
+							width:0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#wrapper .homeMediaBox{
+	display:block;
+	margin-bottom:1em;
+	@include s.media(m){
+		width:100%;
+		display:flex;
+		justify-content:space-between;
+	}
+	&__inner{
+		display:block;
+		margin-bottom:2em;
+		@include s.media(m){
+			width:48%;
+		}
+	}
+	&__title{
+		font-size:1.3em;
+		font-family: "Inter", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 500;
+		font-style: normal;
+		margin-bottom:0.5em;
+		display:block;
+		text-align:center;
+		@include s.media(m){
+			font-size:1.875em;
+		}
+	}
+}
+
+
+#wrapper .homeBannerBox{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	margin-bottom:3em;
+	@include s.media(m){
+		margin-bottom:5em;
+	}
+	&__banner{
+		width:50%;
+		padding:0 0.5em;
+		margin-bottom:1em;
+		@include s.media(m){
+			width:23%;
+			padding:0;
+		}
+		a{
+			display:block;
+			opacity:1;
+			&:hover{
+				opacity:.7;
+			}
+			img{
+				width:100%;
+			}
+		}
+	}
+}
